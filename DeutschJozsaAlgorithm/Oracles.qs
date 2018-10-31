@@ -4,7 +4,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // This file contains the implementations of the quantum oracles used by Deutsch-Jozsa algorithm.
 // You can read more about quantum oracles which implement classical functions
-// at https://review.docs.microsoft.com/en-us/quantum/quantum-concepts-10-oracles.
+// at https://docs.microsoft.com/en-us/quantum/concepts/oracles.
 //
 // You do not need to modify anything in this file.
 // The algorithm on which you'll be working can be found in Algorithms.qs file.
