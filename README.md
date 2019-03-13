@@ -1,6 +1,6 @@
 ﻿# Introduction
 
-This repository contains materials for the "Introduction to Quantum Computing" workshop at 2018 Grace Hopper Celebration. You can also use it outside of the workshop for self-paced learning, using the theory covered in the "Useful Links" section.
+_This repository contains materials for the "Introduction to Quantum Computing" workshop. The first version of the workshop was presented at 2018 Grace Hopper Celebration, the second, improved and updated - at Hopper x1 Seattle. You can also use the materials for self-paced learning, using the theory covered in the "Useful Links" section._
 
 Quantum computing harnesses the laws of nature to enable new types of algorithms, impossible on traditional computers. They are expected to lead to breakthroughs in crucial areas like material and drug discovery.
 
@@ -11,7 +11,7 @@ In this workshop the participants will learn where the power of quantum computin
 To work on this tutorial, you'll need to install the [Quantum Development Kit](https://docs.microsoft.com/quantum), available for Windows 10, macOS, and for Linux.
 Please see the [install guide for the Quantum Development Kit](https://docs.microsoft.com/en-us/quantum/quantum-installconfig) for the detailed instructions. We recommend that you use Visual Studio 2017 or Visual Studio Code to work on the tutorial.
 
-You can also use [Try It Online](https://tio.run/#qs-core) to work on this tutorial without a local Q# setup, but it has a much worse developer experience (no syntax highlight). The pre-populated project can be accessed at https://aka.ms/GHC18-IntroToQuantumComputing. The algorithm template is in the Code section; you can collapse Driver, Header and Footer sections which contain the testing harness for convenience.
+You can also use [Try It Online](https://tio.run/#qs-core) to work on this tutorial without a local Q# setup, but it has a much worse developer experience (Q# version 0.2 and no syntax highlight). The pre-populated project can be accessed at https://aka.ms/GHC18-IntroToQuantumComputing. The algorithm template is in the Code section; you can collapse Driver, Header and Footer sections which contain the testing harness for convenience.
 
 ### Downloading the Tutorial
 
