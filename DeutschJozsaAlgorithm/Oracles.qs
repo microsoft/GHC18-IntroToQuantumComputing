@@ -107,4 +107,30 @@ namespace Quantum.DeutschJozsaAlgorithm {
         adjoint invert;
     }
     
+    
+    // ------------------------------------------------------------------------------------------
+    // helper functions to convert a marking oracle, as defined above, to a phase oracle, as used in the algorithm
+    operation MarkingToPhaseOracleImpl (markingOracle : ((Qubit[], Qubit) => Unit), register : Qubit[]) : Unit {
+        
+        body (...) {
+            using (target = Qubit()) {
+                // Put the target into the |-⟩ state
+                X(target);
+                H(target);
+                
+                // Apply the marking oracle; since the target is in the |-⟩ state,
+                // flipping the target if the register satisfies the oracle condition will apply a -1 factor to the state
+                markingOracle(register, target);
+                
+                // Put the target back into |0⟩ so we can return it
+                H(target);
+                X(target);
+            }
+        }
+    }
+    
+    
+    function MarkingToPhaseOracle (markingOracle : ((Qubit[], Qubit) => Unit)) : (Qubit[] => Unit) {
+        return MarkingToPhaseOracleImpl(markingOracle, _);
+    }    
 }

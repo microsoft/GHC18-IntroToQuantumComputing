@@ -23,6 +23,8 @@ namespace Quantum.DeutschJozsaAlgorithm
                 catch (System.Exception e) {
                     System.Console.WriteLine("Exception: " + e.InnerException.Message);
                 }
+                System.Console.WriteLine("Press any key to continue...");
+                System.Console.ReadKey();
             }
         }
     }

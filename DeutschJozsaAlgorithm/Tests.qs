@@ -24,10 +24,14 @@ namespace Quantum.DeutschJozsaAlgorithm {
     }
     
     // ------------------------------------------------------------------------------------------
-    operation CheckAlgorithmOnOneTest (N : Int, oracle : ((Qubit[], Qubit) => Unit), expected : Bool, extraInfo : String) : Bool {
+    operation CheckAlgorithmOnOneTest (N : Int, markingOracle : ((Qubit[], Qubit) => Unit), expected : Bool, extraInfo : String) : Bool {
         
         ResetOracleCallsCount();
-        let actual = DeutschJozsaAlgorithm(N, oracle);
+
+        // convert marking oracle to phase oracle
+        let phaseOracle = MarkingToPhaseOracle(markingOracle);
+
+        let actual = DeutschJozsaAlgorithm(N, phaseOracle);
         
         // check that the return value is correct
         if (actual != expected) {
@@ -38,7 +42,7 @@ namespace Quantum.DeutschJozsaAlgorithm {
         }
         
         // check that the oracle has been called at most once
-        AssertOracleCallsCount(1, oracle);
+        AssertOracleCallsCount(1, phaseOracle);
         return true;
     }
     
