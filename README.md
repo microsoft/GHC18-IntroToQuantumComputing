@@ -1,6 +1,6 @@
 ﻿# Introduction
 
-_This repository contains materials for the "Introduction to Quantum Computing" workshop. The first version of the workshop was presented at 2018 Grace Hopper Celebration, the second, improved and updated - at Hopper x1 Seattle. You can also use the materials for self-paced learning, using the theory covered in the "Useful Links" section._
+_This repository contains materials for the "Introduction to Quantum Computing" workshop. The first version of the workshop was presented at 2018 Grace Hopper Celebration, the second, improved and updated - at Hopper x1 Seattle. You can also use the materials for self-paced learning, using [the slides from the workshop](./Hopper_Seattle-IntroToQuantumComputing.pptx) and the theory covered in the "Useful Links" section._
 
 Quantum computing harnesses the laws of nature to enable new types of algorithms, impossible on traditional computers. They are expected to lead to breakthroughs in crucial areas like material and drug discovery.
 
